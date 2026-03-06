@@ -42,3 +42,48 @@ body {
     color: white;
     box-shadow: 0 6px 20px rgba(0, 123, 255, 0.4);
 }
+/* Estilo para el Navbar transparente [cite: 321, 322] */
+.bg-dark-transparent {
+    background: rgba(0, 0, 0, 0.4) !important;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Estilo para el Footer con efecto vidrio [cite: 332, 333, 347] */
+.footer-glass {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    color: white;
+}
+
+/* Colores auxiliares */
+.text-light-50 {
+    color: rgba(255, 255, 255, 0.6) !important;
+}
+
+.x-small {
+    font-size: 0.75rem;
+}
+
+/* Asegurar que la imagen de fondo cubra todo [cite: 147, 452] */
+body {
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('../img/fondo.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+/* Estilo específico para el enlace de GitHub */
+.github-link {
+    color: white;
+    font-size: 3rem; /* Tamaño grande para que destaque como logo único */
+    transition: all 0.3s ease;
+    text-shadow: 0 0 10px rgba(0, 210, 255, 0.3);
+    text-decoration: none;
+}
+
+.github-link:hover {
+    color: #00d2ff; /* Cambia al color cian del diseño al pasar el mouse */
+    transform: scale(1.1); /* Efecto de aumento sutil */
+    text-shadow: 0 0 20px rgba(0, 210, 255, 0.6);
+}
